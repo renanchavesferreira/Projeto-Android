@@ -136,7 +136,7 @@ article > img{
 }
 
 img.pequena{
-    max-width: 350px;
+    max-width: 368px;
     display: block;
     margin: auto;
 }
@@ -197,4 +197,17 @@ div > iframe{
     left: 5%;
     height: 90%;
     width: 90%;
+}
+
+@media (max-width: 800px) {
+    article > img {
+        width: 100%;
+        height: auto;
+    }
+
+    img.pequena {
+        max-width: 100%; /* A imagem pequena vai ocupar 100% da largura disponível */
+        display: block;
+        margin: auto;
+    }
 }
